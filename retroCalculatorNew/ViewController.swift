@@ -84,6 +84,17 @@ class ViewController: UIViewController
         processOperation(operation: currentOperation)
     }
     
+    @IBAction func clearBtnPressed(_ sender: Any) {
+        
+        outpulLabel.text = "0"
+        runningNumber = ""
+        currentOperation = Operation.Empty
+        leftValStr = ""
+        rightValStr = ""
+        result = ""
+    }
+    
+    
     
     
     func playSound()
